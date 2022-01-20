@@ -1,0 +1,134 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #3FEEE6;
+    color: #fff;
+}
+
+#root{
+    width: 90%;
+    background-color: #FC4445;
+     margin: 2rem auto;
+     padding: 2rem;
+     border-radius: 1rem;
+     box-shadow: 0 1rem 3rem #000;
+}
+
+#backdrop{
+    background: rgba(0, 0, 0, 0.644);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0%;
+    display: none;
+    margin: 0 auto;
+    -webkit-backdrop-filter: blur(2rem);
+    backdrop-filter: blur(2rem);
+    cursor: pointer;
+}
+
+.todo__form{
+    background: #907163;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 .5rem 5rem #000;
+}
+
+label{
+    font-size: 1.7rem;
+    margin-right: 1rem;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+input{
+    width: 40%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+}
+
+.btn{
+    width: 20%;
+    padding: 1rem 1rem;
+    font-size: 1.7rem;
+    font-family: sans-serif;
+    background: #97caef;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    box-shadow: 0 1rem 4rem #000;
+}
+
+.todo__container{
+    width: 80%;
+    background: #5cdb95;
+    text-align: center;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem #000;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    overflow: hidden;
+    display: block;
+}
+
+.list{
+    display: flex;
+}
+
+.todo__container--task{
+    /* font-size: 1.7rem; */
+    padding-bottom: 1rem;
+}
+
+.todo__container--timeDate{
+    padding-bottom: 1rem;
+}
+
+.update__container{
+    margin: 10rem auto;
+    padding: 5rem;
+    width: 70%;
+    text-align: center ;
+    border: 1rem solid #5cdb95;
+    border-radius: 1rem;
+    box-shadow:0 .5rem 5rem #5cdb95;
+}
+
+.alertPopUp{
+    width: 50%;
+    margin: 10rem auto;
+    padding: 5rem;
+    font-size: 1.7rem;
+    font-weight: 800;
+    border-radius: 1rem;
+    border:1rem solid #5cdb95;
+    text-align: center;
+    box-shadow: 0 .5rem 5rem #5cdb95;
+}
+
+.alertPopUp__msg{
+    margin: 5rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
